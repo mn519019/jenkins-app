@@ -65,6 +65,7 @@ pipeline {
                 echo 'Hello World'
                 sh '''
                     npm config set strict-ssl false
+                    export NODE_TLS_REJECT_UNAUTHORIZED=0
                     npm install netlify-cli 
                     node_modules/.bin/netlify --version
                     echo "Deploying to proudction. Site ID: $NETLIFY_SITE_ID"
