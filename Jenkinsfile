@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        NETLIFY_SITE_ID = '4dd0a065-f618-4a7b-b021-4a1b6dd459e9'
+    }
+
     stages {
         // stage('without docker') {
         //     steps {
@@ -61,6 +65,7 @@ pipeline {
                 sh '''
                     npm install netlify-cli 
                     node_modules/.bin/netlify --version
+                    echo "Deploying to proudction. Site ID: $NETLIFY_SITE_ID"
                 '''
             }
         }        
