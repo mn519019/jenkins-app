@@ -12,11 +12,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Rick's Jenkins Pipeline :-)
+          Rick Jenkins Pipeline
         </a>
       </header>
       <p>
-          Application version: 3
+          Application version: 2
       </p>
     </div>
   );
