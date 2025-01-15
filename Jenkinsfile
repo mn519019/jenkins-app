@@ -8,7 +8,6 @@ pipeline {
                 sh '''
                     echo "Without docker"
                     ls -la
-                    touch container-no.txt
                 '''
             }
         }
