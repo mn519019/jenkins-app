@@ -12,7 +12,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Rick Jenkins Pipeline
+          Learn Jenkins
         </a>
       </header>
       <p>
